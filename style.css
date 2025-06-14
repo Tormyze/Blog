@@ -1,6 +1,7 @@
 body {
-    background-color: #2d2d2d;
+    background-color: #0b0b0b;
     color: #ffffffd0;
+    font-family: 'Jost', sans-serif;
     margin: 0;
 }
 
@@ -8,7 +9,6 @@ header {
     text-align: center;
     align-items: center;
     height: 95px;
-    background-color: black;
 }
 
 h1 {
@@ -21,6 +21,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     font-size: small;
+    background-color: black;
 }
 
 nav a {
