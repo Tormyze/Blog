@@ -8,7 +8,6 @@ body {
 header {
     text-align: center;
     align-items: center;
-    height: 95px;
 }
 
 h1 {
@@ -18,18 +17,32 @@ h1 {
 }
 
 nav {
-    display: flex;
-    justify-content: space-evenly;
     font-size: small;
     background-color: black;
 }
 
-nav a {
-    margin: 6px;
-    text-decoration: none;
-    color: inherit; /* Inherit color from body */
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
 
-nav a:hover {
-    color: #53006c;
+nav li {
+    width: 100%;
+    list-style: none;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 0;
+}
+
+nav li a:hover {
+    color: white;
+    background-color: rgb(29, 29, 29);
 }
