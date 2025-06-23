@@ -27,8 +27,60 @@
             background: linear-gradient(to top, #0051f3, black);
         }
 
+        nav {
+            font-size: small;
+            text-align: center;
+            background-color: black;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            width: 100%;
+            list-style: none;
+        }
+
+        nav li.back {
+            color: red;
+        }
+
+        nav li.back a:hover {
+            color: tomato;
+            background-color: rgb(50, 0, 0);
+        }
+
+        nav li a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            padding: 5px 0;
+        }
+
+        nav li a:hover {
+            color: white;
+            background-color: rgb(29, 29, 29);
+        }
+
+        h3 {
+            text-align: center;
+            font-weight: normal;
+            font-size: 17px;
+            color: #002f85;
+            padding: 0;
+            margin: 0;
+            margin-top: 8px;
+        }
+
         details {
            margin: 12px 20px;
+           margin-top: 0;
            border-radius: 15px;
            box-shadow: #0051f3 0px 0px 8px;
            font-size: 22px;
@@ -44,30 +96,86 @@
         }
 
         summary {
-            cursor: pointer;
-            box-sizing: border-box;
-            border-radius: 15px;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
             padding: 20px;
+            border-radius: 15px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        summary input {
+            width: 180px;
+            height: 25px;
+            padding: 12px;
+            color: #ffffff80;
+            font-family: 'Jost', sans-serif;
+            background-color: #000a1d;
+            border: black solid 2px;
+            border-radius: 15px;
+        }
+
+        summary input:focus {
+            outline: none;
+            padding: 12px;
+            border-width: 2px;
+            border-color: #000a1d;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 1px 0;
+            background-color: black;
+        }
+
+        footer p {
+            margin: 0;
+            padding: 8px 0;
         }
 
     </style>
 
 </head>
 <body>
-    <h1>Here you can read the posts</h1>
+    <h1>Here You Can Read the Posts</h1>
+
+    <nav>
+        <ul>
+            <li class="back"><a href="index.html">Back</a></li>
+            <li><a href="comments.html">Comments</a></li>
+            <li><a href="rating.html">Rating</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <h3>Click to see all the Posts</h3>
 
     <details>
-        <summary>Posts</summary>
+        <summary>
+            <span>Posts</span>
+            <input type="search" name="search" placeholder="Search a post...">
+        </summary>
 
-        <div class="post" name="examplepost">
+        <article class="post" name="examplepost">
             <h2>Post Title</h2>
             <p>This is a post. It's just an example to illustrate the structure, and it fits well with the overall design, huh? I think we can type a lot within this space and make it look really nice. Copilot is writing many things for us here, by the way. He's very nice though.</p>
-        </div>
+        </article>
 
-        <div class="post" name="examplepost2">
+        <article class="post" name="examplepost2">
             <h2>Another Post Title</h2>
             <p>This is another post. It's just an example to illustrate the structure, and it fits well with the overall design, huh? I think we can type a lot within this space and make it look really nice. Copilot is writing many things for us here, by the way. He's very nice though.</p>
-        </div>
+        </article>
     </details>
+
+    <footer>
+        <p>&copy; 2025 - Tormyze</p>
+    </footer>
+    
 </body>
 </html>

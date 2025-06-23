@@ -1,0 +1,123 @@
+body {
+  background-color: #0b0b0b;
+  color: #ffffffd0;
+  font-family: "Jost", sans-serif;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 0 0;
+  padding: 15px 0;
+  background: linear-gradient(0deg, #0051f3, black);
+}
+
+nav {
+  font-size: small;
+  background-color: black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  width: 100%;
+  list-style: none;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 5px 0;
+}
+
+nav li a:hover {
+  color: white;
+  background-color: rgb(29, 29, 29);
+}
+
+nav li.back {
+  color: red;
+}
+
+nav li.back a:hover {
+  color: tomato;
+  background-color: rgb(50, 0, 0);
+}
+
+main {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+main h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+main hr {
+  width: 110%;
+  margin: 0 auto;
+  transform: translateX(-4.5%);
+  margin-bottom: 25px;
+  border: 1px dashed #b4b4b4d0;
+}
+
+.line {
+  width: 90%;
+  margin: auto;
+  padding-left: 10px;
+  border-left: solid 0.5px #b4b4b4d0;
+}
+
+.line summary {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.line p {
+  font-weight: 300;
+  text-align: justify;
+}
+
+.thank-you {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 680;
+  transition: font-size 0.3s ease;
+}
+
+.thank-you:hover {
+  font-size: 25px;
+}
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1px 0;
+  background-color: black;
+}
+
+footer p {
+  margin: 0;
+  padding: 8px 0;
+}

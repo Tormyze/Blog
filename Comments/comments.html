@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Comments</title>
+
+    <style>
+        nav {
+            text-align: center;
+        }
+
+        nav li.back {
+            color: red;
+        }
+
+        nav li.back a:hover {
+            color: tomato;
+            background-color: rgb(50, 0, 0);
+        }
+
+        .comment {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            margin: 5% auto;
+            padding: 2px;
+            line-height: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .comment p {
+            line-height: 12px;
+        }
+
+        select, input {
+            color: rgb(140, 140, 140);
+            width: 150px;
+            height: 25px;
+            font-family: 'Jost', sans-serif;
+            background-color: #222;
+            border: rgb(50, 50, 50) solid 2px;
+            border-radius: 15px;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        select {
+            border-radius: 5px;
+            color: #ffffffd0;
+        }
+
+        select:focus {
+            outline: none;
+        }
+
+        input:focus {
+            outline: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Comments</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="posts.html">Posts</a></li>
+            <li class="back"><a href="../index.html">Back</a></li>
+            <li><a href="rating.html">Rating</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="comment">
+            <p>Leave a comment on my posts!</p>
+
+            <select name="post-list">
+                <option value="1">Post Title</option>
+                <option value="2">Another Post Title</option>
+            </select>
+
+            <input type="search" name="search" placeholder="Search one post...">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Tormyze</p>
+    </footer>
+    
+</body>
+</html>
